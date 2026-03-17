@@ -1,0 +1,16 @@
+{
+  "id": "user-001",
+  "name": "Alex Chen",
+  "avatar": "https://picsum.photos/seed/alex-chen/200/200",
+  "email": "alex@example.com",
+  "memberSince": "2025-07-15",
+  "enrolledBusinessIds": [1, 2, 4],
+  "businessProgress": {
+    "1": { "points": 520, "tier": "Insider", "tierIndex": 2, "visits": 34 },
+    "2": { "points": 210, "tier": "Regular", "tierIndex": 1, "visits": 12 },
+    "4": { "points": 85, "tier": "First Visit", "tierIndex": 0, "visits": 6 }
+  },
+  "redeemedMerch": [],
+  "rsvpedExperiences": ["exp4"],
+  "totalVisits": 52
+}

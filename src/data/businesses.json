@@ -1,0 +1,138 @@
+[
+  {
+    "id": 1,
+    "name": "Sonder Coffee",
+    "type": "Coffee Shop",
+    "tagline": "Every cup tells a story",
+    "description": "A third-wave coffee house where single-origin beans meet neighborhood warmth. Sonder Coffee is where mornings slow down and conversations deepen over carefully crafted pour-overs and house-made pastries.",
+    "imageUrl": "https://picsum.photos/seed/sonder-coffee/390/844",
+    "coverUrl": "https://picsum.photos/seed/sonder-cover/390/500",
+    "hours": "6:30am – 5:00pm",
+    "neighborhood": "West Village",
+    "tiers": [
+      { "name": "First Visit", "pointsRequired": 0, "perks": ["Welcome drink on us", "Access to community board"] },
+      { "name": "Regular", "pointsRequired": 150, "perks": ["Free pastry every 5th visit", "Early access to seasonal blends", "Birthday drink"] },
+      { "name": "Insider", "pointsRequired": 500, "perks": ["Monthly cupping invitations", "10% off all merch", "Reserved seating mornings"] },
+      { "name": "Inner Circle", "pointsRequired": 1200, "perks": ["Private tasting events", "Custom blend created for you", "Name on the wall", "Free merch item quarterly"] }
+    ],
+    "merch": [
+      { "id": "m1", "name": "Sonder Ceramic Mug", "description": "Hand-thrown 12oz mug in our signature warm clay glaze. Made by a local ceramicist.", "imageUrl": "https://picsum.photos/seed/sonder-mug/300/300", "tierRequired": "Regular", "redeemed": false },
+      { "id": "m2", "name": "Single Origin Sampler", "description": "Four 2oz bags of our current single-origin rotation. Roasted this week.", "imageUrl": "https://picsum.photos/seed/sonder-sampler/300/300", "tierRequired": "Insider", "redeemed": false },
+      { "id": "m3", "name": "Barista Workshop Pass", "description": "A 2-hour hands-on session with our head barista. Learn latte art and brewing techniques.", "imageUrl": "https://picsum.photos/seed/sonder-workshop/300/300", "tierRequired": "Inner Circle", "redeemed": false }
+    ],
+    "events": [
+      { "id": "e1", "title": "Sunday Cupping Session", "date": "2026-03-22", "time": "10:00 AM", "spotsLeft": 4, "tierRequired": "Insider" },
+      { "id": "e2", "title": "Latte Art Throwdown", "date": "2026-03-28", "time": "3:00 PM", "spotsLeft": 12, "tierRequired": "Regular" }
+    ],
+    "communityMemberCount": 247,
+    "onlineCount": 18
+  },
+  {
+    "id": 2,
+    "name": "Vesper",
+    "type": "Cocktail Bar",
+    "tagline": "Where the evening begins",
+    "description": "An intimate cocktail bar with a revolving menu inspired by the seasons. Vesper is for those who appreciate the craft — the slow stir, the perfect dilution, the garnish placed just so.",
+    "imageUrl": "https://picsum.photos/seed/vesper-bar/390/844",
+    "coverUrl": "https://picsum.photos/seed/vesper-cover/390/500",
+    "hours": "5:00pm – 1:00am",
+    "neighborhood": "Lower East Side",
+    "tiers": [
+      { "name": "First Visit", "pointsRequired": 0, "perks": ["Complimentary amuse-bouche", "Cocktail menu guide"] },
+      { "name": "Regular", "pointsRequired": 200, "perks": ["Skip the wait on weeknights", "Seasonal cocktail preview", "Birthday cocktail"] },
+      { "name": "Insider", "pointsRequired": 600, "perks": ["Invite to spirit tastings", "Off-menu access", "Preferred seating"] },
+      { "name": "Inner Circle", "pointsRequired": 1500, "perks": ["Private bar events", "Custom cocktail on the menu", "Guest list +1 always", "Annual bottle service"] }
+    ],
+    "merch": [
+      { "id": "m4", "name": "Vesper Coupe Glass Set", "description": "Set of two etched coupe glasses with the Vesper monogram.", "imageUrl": "https://picsum.photos/seed/vesper-glass/300/300", "tierRequired": "Regular", "redeemed": false },
+      { "id": "m5", "name": "Bitters Collection", "description": "Three house-made bitters: citrus, aromatic, and seasonal.", "imageUrl": "https://picsum.photos/seed/vesper-bitters/300/300", "tierRequired": "Insider", "redeemed": false },
+      { "id": "m6", "name": "Home Bar Kit", "description": "Japanese-style jigger, mixing spoon, and strainer in matte black.", "imageUrl": "https://picsum.photos/seed/vesper-kit/300/300", "tierRequired": "Inner Circle", "redeemed": false }
+    ],
+    "events": [
+      { "id": "e3", "title": "Mezcal & Agave Night", "date": "2026-03-25", "time": "7:00 PM", "spotsLeft": 6, "tierRequired": "Insider" },
+      { "id": "e4", "title": "Spring Menu Launch", "date": "2026-04-01", "time": "6:00 PM", "spotsLeft": 20, "tierRequired": "First Visit" }
+    ],
+    "communityMemberCount": 183,
+    "onlineCount": 9
+  },
+  {
+    "id": 3,
+    "name": "Terroir",
+    "type": "Wine Bar",
+    "tagline": "Taste the place",
+    "description": "A natural wine bar celebrating small producers and biodynamic farming. Terroir is where you discover your next favorite bottle through guided flights and unhurried conversation.",
+    "imageUrl": "https://picsum.photos/seed/terroir-wine/390/844",
+    "coverUrl": "https://picsum.photos/seed/terroir-cover/390/500",
+    "hours": "4:00pm – 11:00pm",
+    "neighborhood": "Williamsburg",
+    "tiers": [
+      { "name": "First Visit", "pointsRequired": 0, "perks": ["Tasting notes card", "Welcome glass of house wine"] },
+      { "name": "Regular", "pointsRequired": 180, "perks": ["10% off bottles to-go", "Flight of the month access", "Birthday bottle"] },
+      { "name": "Insider", "pointsRequired": 550, "perks": ["Winemaker dinner invites", "Cellar selection access", "Priority reservations"] },
+      { "name": "Inner Circle", "pointsRequired": 1400, "perks": ["Annual vineyard trip raffle", "Personal wine profile", "Complimentary corkage", "Allocation access"] }
+    ],
+    "merch": [
+      { "id": "m7", "name": "Terroir Wine Key", "description": "Double-hinged sommelier corkscrew with olive wood handle.", "imageUrl": "https://picsum.photos/seed/terroir-key/300/300", "tierRequired": "Regular", "redeemed": false },
+      { "id": "m8", "name": "Natural Wine Zine", "description": "Our quarterly print zine on natural wine culture, producers, and recipes.", "imageUrl": "https://picsum.photos/seed/terroir-zine/300/300", "tierRequired": "Insider", "redeemed": false }
+    ],
+    "events": [
+      { "id": "e5", "title": "Orange Wine Flight Night", "date": "2026-03-20", "time": "6:30 PM", "spotsLeft": 8, "tierRequired": "Regular" }
+    ],
+    "communityMemberCount": 156,
+    "onlineCount": 7
+  },
+  {
+    "id": 4,
+    "name": "Levain",
+    "type": "Bakery",
+    "tagline": "Slow dough, warm soul",
+    "description": "A neighborhood bakery built on 48-hour ferments and heritage grains. Levain is where the aroma of fresh sourdough meets the warmth of a place that remembers your name and your usual order.",
+    "imageUrl": "https://picsum.photos/seed/levain-bakery/390/844",
+    "coverUrl": "https://picsum.photos/seed/levain-cover/390/500",
+    "hours": "7:00am – 3:00pm",
+    "neighborhood": "Park Slope",
+    "tiers": [
+      { "name": "First Visit", "pointsRequired": 0, "perks": ["Sample of the day", "Baking tips card"] },
+      { "name": "Regular", "pointsRequired": 120, "perks": ["Free loaf every 10th visit", "Early bird pre-orders", "Birthday pastry box"] },
+      { "name": "Insider", "pointsRequired": 400, "perks": ["Baking class invitations", "Holiday pre-order priority", "10% off catering"] },
+      { "name": "Inner Circle", "pointsRequired": 1000, "perks": ["Monthly bread subscription", "Recipe book access", "Private baking sessions", "Name a loaf"] }
+    ],
+    "merch": [
+      { "id": "m9", "name": "Levain Linen Tote", "description": "Natural linen tote with hand-stamped Levain logo. Fits two loaves perfectly.", "imageUrl": "https://picsum.photos/seed/levain-tote/300/300", "tierRequired": "Regular", "redeemed": false },
+      { "id": "m10", "name": "Sourdough Starter Kit", "description": "Live starter from our 3-year-old mother dough, plus feeding instructions.", "imageUrl": "https://picsum.photos/seed/levain-starter/300/300", "tierRequired": "Insider", "redeemed": false },
+      { "id": "m11", "name": "Baker's Apron", "description": "Waxed canvas apron with leather straps. Built to last a lifetime of baking.", "imageUrl": "https://picsum.photos/seed/levain-apron/300/300", "tierRequired": "Inner Circle", "redeemed": false }
+    ],
+    "events": [
+      { "id": "e6", "title": "Sourdough 101 Workshop", "date": "2026-03-29", "time": "9:00 AM", "spotsLeft": 6, "tierRequired": "Insider" },
+      { "id": "e7", "title": "Croissant Masterclass", "date": "2026-04-05", "time": "8:00 AM", "spotsLeft": 4, "tierRequired": "Inner Circle" }
+    ],
+    "communityMemberCount": 312,
+    "onlineCount": 24
+  },
+  {
+    "id": 5,
+    "name": "Provenance",
+    "type": "Farm-to-Table",
+    "tagline": "Know where it comes from",
+    "description": "A farm-to-table restaurant where every dish traces back to a specific farm, fisher, or forager. Provenance is for those who believe that knowing the story behind your meal makes it taste better.",
+    "imageUrl": "https://picsum.photos/seed/provenance-rest/390/844",
+    "coverUrl": "https://picsum.photos/seed/provenance-cover/390/500",
+    "hours": "5:30pm – 10:30pm",
+    "neighborhood": "Fort Greene",
+    "tiers": [
+      { "name": "First Visit", "pointsRequired": 0, "perks": ["Farm source card with your meal", "Welcome amuse-bouche"] },
+      { "name": "Regular", "pointsRequired": 250, "perks": ["Priority reservations", "Seasonal tasting menu preview", "Birthday dessert course"] },
+      { "name": "Insider", "pointsRequired": 700, "perks": ["Chef's table availability", "Farm visit invitations", "Wine pairing discount"] },
+      { "name": "Inner Circle", "pointsRequired": 1800, "perks": ["Annual harvest dinner", "Custom menu for special occasions", "Cookbook signed by chef", "Kitchen pass experience"] }
+    ],
+    "merch": [
+      { "id": "m12", "name": "Provenance Cutting Board", "description": "End-grain walnut board made from wood reclaimed from our partner farms.", "imageUrl": "https://picsum.photos/seed/provenance-board/300/300", "tierRequired": "Insider", "redeemed": false },
+      { "id": "m13", "name": "Seasonal Preserve Set", "description": "Three jars of house-made preserves using peak-season fruit.", "imageUrl": "https://picsum.photos/seed/provenance-preserve/300/300", "tierRequired": "Regular", "redeemed": false }
+    ],
+    "events": [
+      { "id": "e8", "title": "Farm Visit: Hudson Valley", "date": "2026-04-12", "time": "10:00 AM", "spotsLeft": 10, "tierRequired": "Insider" }
+    ],
+    "communityMemberCount": 198,
+    "onlineCount": 11
+  }
+]
