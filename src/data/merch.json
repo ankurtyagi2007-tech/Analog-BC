@@ -1,0 +1,142 @@
+[
+  {
+    "id": "kindred-tote",
+    "businessId": "kindred-coffee",
+    "name": "Kindred Canvas Tote",
+    "description": "Heavyweight organic cotton tote with embroidered Kindred logo. Made in collaboration with a local textile studio.",
+    "image": "https://picsum.photos/seed/tote-bag/390/300",
+    "tierRequired": "regular",
+    "pointsCost": 150,
+    "available": true
+  },
+  {
+    "id": "kindred-mug",
+    "businessId": "kindred-coffee",
+    "name": "Ceramic Pour-Over Mug",
+    "description": "Handmade ceramic mug by a Brooklyn potter. Each piece is unique with a warm glaze finish.",
+    "image": "https://picsum.photos/seed/ceramic-mug/390/300",
+    "tierRequired": "regular",
+    "pointsCost": 200,
+    "available": true
+  },
+  {
+    "id": "kindred-beans",
+    "businessId": "kindred-coffee",
+    "name": "Single Origin Sample Set",
+    "description": "Three 4oz bags of our current single-origin selections with tasting notes card.",
+    "image": "https://picsum.photos/seed/coffee-beans/390/300",
+    "tierRequired": "family",
+    "pointsCost": 300,
+    "available": true
+  },
+  {
+    "id": "kindred-apron",
+    "businessId": "kindred-coffee",
+    "name": "Barista Linen Apron",
+    "description": "Limited edition linen apron in Kindred's signature clay color. Only 50 made.",
+    "image": "https://picsum.photos/seed/linen-apron/390/300",
+    "tierRequired": "inner-circle",
+    "pointsCost": 500,
+    "available": true
+  },
+  {
+    "id": "contra-glass",
+    "businessId": "contra-cocktails",
+    "name": "Contra Coupe Glass Set",
+    "description": "Set of two hand-blown coupe glasses etched with the Contra monogram.",
+    "image": "https://picsum.photos/seed/coupe-glass/390/300",
+    "tierRequired": "patron",
+    "pointsCost": 250,
+    "available": true
+  },
+  {
+    "id": "contra-bitters",
+    "businessId": "contra-cocktails",
+    "name": "House Bitters Collection",
+    "description": "Three small-batch bitters made in-house: citrus, aromatic, and smoked cherry.",
+    "image": "https://picsum.photos/seed/bitters-set/390/300",
+    "tierRequired": "patron",
+    "pointsCost": 180,
+    "available": true
+  },
+  {
+    "id": "contra-cap",
+    "businessId": "contra-cocktails",
+    "name": "Contra Embroidered Cap",
+    "description": "Washed cotton cap in midnight navy with tonal Contra embroidery.",
+    "image": "https://picsum.photos/seed/cap-hat/390/300",
+    "tierRequired": "confidant",
+    "pointsCost": 350,
+    "available": true
+  },
+  {
+    "id": "terroir-corkscrew",
+    "businessId": "terroir-wine",
+    "name": "Sommelier Corkscrew",
+    "description": "Professional-grade waiter's corkscrew with olivewood handle. Engraved with Terroir mark.",
+    "image": "https://picsum.photos/seed/corkscrew/390/300",
+    "tierRequired": "enthusiast",
+    "pointsCost": 200,
+    "available": true
+  },
+  {
+    "id": "terroir-carafe",
+    "businessId": "terroir-wine",
+    "name": "Hand-Blown Carafe",
+    "description": "Artisan glass carafe perfect for natural wines. Made by a Murano-trained glassblower.",
+    "image": "https://picsum.photos/seed/glass-carafe/390/300",
+    "tierRequired": "sommelier",
+    "pointsCost": 400,
+    "available": true
+  },
+  {
+    "id": "terroir-tee",
+    "businessId": "terroir-wine",
+    "name": "Terroir Vintage Tee",
+    "description": "Garment-dyed cotton tee with a wine region map print on the back.",
+    "image": "https://picsum.photos/seed/vintage-tee/390/300",
+    "tierRequired": "sommelier",
+    "pointsCost": 280,
+    "available": true
+  },
+  {
+    "id": "levain-cloth",
+    "businessId": "levain-bakery",
+    "name": "Bread Linen Wrap",
+    "description": "French linen bread wrap to keep your loaves fresh. Screen-printed with Levain's wheat motif.",
+    "image": "https://picsum.photos/seed/bread-linen/390/300",
+    "tierRequired": "morning-regular",
+    "pointsCost": 120,
+    "available": true
+  },
+  {
+    "id": "levain-starter",
+    "businessId": "levain-bakery",
+    "name": "Sourdough Starter Kit",
+    "description": "Take home a piece of our 12-year-old sourdough starter with a care guide and recipe card.",
+    "image": "https://picsum.photos/seed/sourdough-kit/390/300",
+    "tierRequired": "sourdough-society",
+    "pointsCost": 250,
+    "available": true
+  },
+  {
+    "id": "hearth-board",
+    "businessId": "hearth-restaurant",
+    "name": "Olive Wood Cutting Board",
+    "description": "Hand-carved olive wood board sourced from our partner farm in the Hudson Valley.",
+    "image": "https://picsum.photos/seed/cutting-board/390/300",
+    "tierRequired": "regular-table",
+    "pointsCost": 300,
+    "available": true
+  },
+  {
+    "id": "hearth-sauce",
+    "businessId": "hearth-restaurant",
+    "name": "House Hot Sauce Trio",
+    "description": "Three seasonal hot sauces made from our garden peppers. Limited annual batch.",
+    "image": "https://picsum.photos/seed/hot-sauce/390/300",
+    "tierRequired": "regular-table",
+    "pointsCost": 180,
+    "available": true
+  }
+]

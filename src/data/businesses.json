@@ -1,0 +1,241 @@
+[
+  {
+    "id": "kindred-coffee",
+    "name": "Kindred Coffee",
+    "tagline": "Specialty coffee, crafted with intention",
+    "type": "Specialty Coffee",
+    "description": "A neighborhood specialty coffee shop sourcing single-origin beans from small farms across Central and East Africa. Every cup is brewed with care, every visit remembered.",
+    "address": "142 Sullivan St, New York, NY 10012",
+    "hours": "Mon-Fri 7am-6pm, Sat-Sun 8am-5pm",
+    "phone": "(212) 555-0147",
+    "imageHero": "https://picsum.photos/seed/analog-coffee/390/844",
+    "imageCard": "https://picsum.photos/seed/kindred-hero/390/600",
+    "imageBanner": "https://picsum.photos/seed/espresso/390/300",
+    "enrolled": true,
+    "totalVisits": 12,
+    "lifetimePoints": 480,
+    "memberSince": "2025-09-10",
+    "currentTier": 1,
+    "tiers": [
+      {
+        "id": "first-pour",
+        "name": "First Pour",
+        "visitsRequired": 1,
+        "perks": ["Welcome drink on us", "Access to community feed"]
+      },
+      {
+        "id": "regular",
+        "name": "Regular",
+        "visitsRequired": 5,
+        "perks": ["Early access to new blends", "Birthday coffee", "Merch access"]
+      },
+      {
+        "id": "family",
+        "name": "Family",
+        "visitsRequired": 15,
+        "perks": ["Monthly cupping invites", "Limited edition merch", "Priority seating"]
+      },
+      {
+        "id": "inner-circle",
+        "name": "Inner Circle",
+        "visitsRequired": 30,
+        "perks": ["Private tastings", "Name on the wall", "Barista-for-a-day experience"]
+      }
+    ],
+    "nextUnlock": "Family (3 more visits)",
+    "timeline": [
+      { "date": "2025-09-10", "event": "First visit", "tier": "First Pour" },
+      { "date": "2025-10-02", "event": "5th visit — unlocked Regular", "tier": "Regular" },
+      { "date": "2025-12-15", "event": "Attended holiday cupping", "tier": "Regular" },
+      { "date": "2026-02-28", "event": "10th visit milestone", "tier": "Regular" }
+    ]
+  },
+  {
+    "id": "contra-cocktails",
+    "name": "Contra Cocktails",
+    "tagline": "Cocktails with conviction",
+    "type": "Cocktail Bar",
+    "description": "An intimate cocktail bar where every drink tells a story. Seasonal menus inspired by travel, memory, and the unexpected. Reservations encouraged, walk-ins welcomed.",
+    "address": "38 Orchard St, New York, NY 10002",
+    "hours": "Tue-Sun 5pm-1am",
+    "phone": "(212) 555-0283",
+    "imageHero": "https://picsum.photos/seed/analog-bar/390/844",
+    "imageCard": "https://picsum.photos/seed/cocktail-lounge/390/600",
+    "imageBanner": "https://picsum.photos/seed/cocktail-dark/390/300",
+    "enrolled": true,
+    "totalVisits": 8,
+    "lifetimePoints": 640,
+    "memberSince": "2025-10-22",
+    "currentTier": 1,
+    "tiers": [
+      {
+        "id": "newcomer",
+        "name": "Newcomer",
+        "visitsRequired": 1,
+        "perks": ["Complimentary amuse-bouche", "Community access"]
+      },
+      {
+        "id": "patron",
+        "name": "Patron",
+        "visitsRequired": 4,
+        "perks": ["Off-menu drinks", "Priority reservations", "Merch access"]
+      },
+      {
+        "id": "confidant",
+        "name": "Confidant",
+        "visitsRequired": 12,
+        "perks": ["Seasonal menu preview", "Bartender's choice flights", "Exclusive events"]
+      },
+      {
+        "id": "house-guest",
+        "name": "House Guest",
+        "visitsRequired": 25,
+        "perks": ["Personal bottle locker", "Custom cocktail on menu", "Annual dinner invite"]
+      }
+    ],
+    "nextUnlock": "Confidant (4 more visits)",
+    "timeline": [
+      { "date": "2025-10-22", "event": "First visit", "tier": "Newcomer" },
+      { "date": "2025-11-05", "event": "4th visit — unlocked Patron", "tier": "Patron" },
+      { "date": "2026-01-14", "event": "Attended mixology workshop", "tier": "Patron" },
+      { "date": "2026-03-01", "event": "8th visit milestone", "tier": "Patron" }
+    ]
+  },
+  {
+    "id": "terroir-wine",
+    "name": "Terroir Wine Bar",
+    "tagline": "Every glass has a geography",
+    "type": "Wine Bar",
+    "description": "A natural wine bar celebrating terroir-driven producers from around the world. Rotating selections, thoughtful pairings, and a community of curious palates.",
+    "address": "267 5th Ave, Brooklyn, NY 11215",
+    "hours": "Wed-Mon 4pm-11pm",
+    "phone": "(718) 555-0391",
+    "imageHero": "https://picsum.photos/seed/wine-bar/390/844",
+    "imageCard": "https://picsum.photos/seed/wine-cellar/390/600",
+    "imageBanner": "https://picsum.photos/seed/wine-glass/390/300",
+    "enrolled": true,
+    "totalVisits": 14,
+    "lifetimePoints": 840,
+    "memberSince": "2025-08-03",
+    "currentTier": 2,
+    "tiers": [
+      {
+        "id": "taster",
+        "name": "Taster",
+        "visitsRequired": 1,
+        "perks": ["Welcome glass of the house pour", "Community access"]
+      },
+      {
+        "id": "enthusiast",
+        "name": "Enthusiast",
+        "visitsRequired": 5,
+        "perks": ["Winemaker notes access", "10% off bottle purchases"]
+      },
+      {
+        "id": "sommelier",
+        "name": "Sommelier",
+        "visitsRequired": 12,
+        "perks": ["Monthly allocation access", "Private tasting invites", "Merch access"]
+      },
+      {
+        "id": "cellar-keeper",
+        "name": "Cellar Keeper",
+        "visitsRequired": 24,
+        "perks": ["Personal wine locker", "Winemaker dinner invites", "Annual vineyard trip lottery"]
+      }
+    ],
+    "nextUnlock": "Cellar Keeper (10 more visits)",
+    "timeline": [
+      { "date": "2025-08-03", "event": "First visit", "tier": "Taster" },
+      { "date": "2025-08-28", "event": "5th visit — unlocked Enthusiast", "tier": "Enthusiast" },
+      { "date": "2025-11-10", "event": "12th visit — unlocked Sommelier", "tier": "Sommelier" },
+      { "date": "2026-02-14", "event": "Valentine's wine dinner", "tier": "Sommelier" }
+    ]
+  },
+  {
+    "id": "levain-bakery",
+    "name": "Levain Bakery",
+    "tagline": "Slow ferments, lasting impressions",
+    "type": "Bakery",
+    "description": "An artisan bakery specializing in naturally leavened breads and seasonal pastries. Everything is made from scratch daily using heritage grains and local dairy.",
+    "address": "89 Court St, Brooklyn, NY 11201",
+    "hours": "Wed-Sun 7am-3pm",
+    "phone": "(718) 555-0512",
+    "imageHero": "https://picsum.photos/seed/analog-bakery/390/844",
+    "imageCard": "https://picsum.photos/seed/bakery-morning/390/600",
+    "imageBanner": "https://picsum.photos/seed/sourdough/390/300",
+    "enrolled": false,
+    "totalVisits": 0,
+    "lifetimePoints": 0,
+    "memberSince": null,
+    "currentTier": -1,
+    "tiers": [
+      {
+        "id": "first-slice",
+        "name": "First Slice",
+        "visitsRequired": 1,
+        "perks": ["Welcome pastry", "Community access"]
+      },
+      {
+        "id": "morning-regular",
+        "name": "Morning Regular",
+        "visitsRequired": 5,
+        "perks": ["Early bird access to weekend specials", "Birthday loaf"]
+      },
+      {
+        "id": "sourdough-society",
+        "name": "Sourdough Society",
+        "visitsRequired": 15,
+        "perks": ["Monthly bread subscription option", "Baking workshop invites"]
+      }
+    ],
+    "nextUnlock": null,
+    "timeline": []
+  },
+  {
+    "id": "hearth-restaurant",
+    "name": "Hearth & Harvest",
+    "tagline": "From the land to your table",
+    "type": "Farm-to-Table",
+    "description": "A farm-to-table restaurant working directly with Hudson Valley farms. Seasonal tasting menus that change weekly, served in a warm, candlelit dining room.",
+    "address": "521 Hudson St, New York, NY 10014",
+    "hours": "Tue-Sat 5:30pm-10pm, Sun Brunch 10am-2pm",
+    "phone": "(212) 555-0678",
+    "imageHero": "https://picsum.photos/seed/analog-restaurant/390/844",
+    "imageCard": "https://picsum.photos/seed/farm-table/390/600",
+    "imageBanner": "https://picsum.photos/seed/dining-room/390/300",
+    "enrolled": false,
+    "totalVisits": 0,
+    "lifetimePoints": 0,
+    "memberSince": null,
+    "currentTier": -1,
+    "tiers": [
+      {
+        "id": "first-course",
+        "name": "First Course",
+        "visitsRequired": 1,
+        "perks": ["Amuse-bouche on arrival", "Community access"]
+      },
+      {
+        "id": "regular-table",
+        "name": "Regular Table",
+        "visitsRequired": 4,
+        "perks": ["Preferred seating", "Chef's surprise course"]
+      },
+      {
+        "id": "chefs-table",
+        "name": "Chef's Table",
+        "visitsRequired": 10,
+        "perks": ["Kitchen visits", "Off-menu items", "Harvest dinner invites"]
+      },
+      {
+        "id": "family-meal",
+        "name": "Family Meal",
+        "visitsRequired": 20,
+        "perks": ["Annual farm visit", "Custom menu creation", "Private dining access"]
+      }
+    ],
+    "nextUnlock": null,
+    "timeline": []
+  }
+]
