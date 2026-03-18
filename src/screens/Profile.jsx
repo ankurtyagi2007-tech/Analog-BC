@@ -100,7 +100,7 @@ export default function Profile() {
             <div className="space-y-3">
               {enrolledBusinesses.map((business, index) => {
                 const progress = getUserProgress(business.id)
-                const nextTier = business.tiers.find(t => t.pointsRequired > (progress?.points || 0))
+                const nextTier = business.tiers?.find(t => t.pointsRequired > (progress?.points || 0))
 
                 return (
                   <motion.button
@@ -132,7 +132,7 @@ export default function Profile() {
                             <div
                               className="h-full bg-terracotta rounded-full transition-all"
                               style={{
-                                width: `${Math.min(100, ((progress.points - (business.tiers[progress.tierIndex]?.pointsRequired || 0)) / (nextTier.pointsRequired - (business.tiers[progress.tierIndex]?.pointsRequired || 0))) * 100)}%`
+                                width: `${Math.min(100, ((progress.points - (business.tiers?.[progress.tierIndex]?.pointsRequired || 0)) / (Math.max(1, nextTier.pointsRequired - (business.tiers?.[progress.tierIndex]?.pointsRequired || 0)))) * 100)}%`
                               }}
                             />
                           </div>
@@ -161,8 +161,8 @@ export default function Profile() {
               {[
                 { title: 'Early Adopter', desc: 'Joined in the first year', unlocked: true },
                 { title: 'Explorer', desc: 'Enrolled in 3+ places', unlocked: enrolledBusinesses.length >= 3 },
-                { title: 'Loyal Regular', desc: 'Reached Regular tier', unlocked: Object.values(user.businessProgress).some(p => p.tierIndex >= 1) },
-                { title: 'Insider Access', desc: 'Reached Insider tier', unlocked: Object.values(user.businessProgress).some(p => p.tierIndex >= 2) },
+                { title: 'Loyal Regular', desc: 'Reached Regular tier', unlocked: Object.values(user.businessProgress || {}).some(p => p.tierIndex >= 1) },
+                { title: 'Insider Access', desc: 'Reached Insider tier', unlocked: Object.values(user.businessProgress || {}).some(p => p.tierIndex >= 2) },
               ].map((achievement) => (
                 <div
                   key={achievement.title}

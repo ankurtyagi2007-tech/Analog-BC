@@ -72,7 +72,7 @@ export default function BusinessDetail() {
             <h3 className="font-serif text-xl font-semibold text-espresso mb-4">Your Journey</h3>
             <div className="relative pl-8">
               <div className="absolute left-3 top-2 bottom-2 w-px bg-sand/50" />
-              {business.tiers.map((tier, i) => {
+              {(business.tiers || []).map((tier, i) => {
                 const isCurrentOrPast = progress ? i <= progress.tierIndex : false
                 const isCurrent = progress ? i === progress.tierIndex : false
                 return (
@@ -116,7 +116,7 @@ export default function BusinessDetail() {
           <div>
             <h3 className="font-serif text-xl font-semibold text-espresso mb-4">Exclusive Merch</h3>
             <div className="flex gap-3 overflow-x-auto -mx-5 px-5 pb-2">
-              {business.merch.map(item => {
+              {(business.merch || []).map(item => {
                 const tierIndex = business.tiers.findIndex(t => t.name === item.tierRequired)
                 const isLocked = progress ? progress.tierIndex < tierIndex : true
                 return (

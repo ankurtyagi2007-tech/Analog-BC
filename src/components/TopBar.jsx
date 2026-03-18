@@ -28,7 +28,7 @@ export default function TopBar({ showBack = false, transparent = true }) {
         {user?.avatar ? (
           <img
             src={user.avatar}
-            alt={user.name}
+            alt={user?.name || ''}
             className="w-full h-full object-cover"
           />
         ) : (

@@ -6,7 +6,7 @@ import TierBadge from './TierBadge'
 export default function BusinessCard({ business, progress }) {
   const navigate = useNavigate()
 
-  const nextTier = business.tiers.find(t => t.pointsRequired > (progress?.points || 0))
+  const nextTier = business.tiers?.find(t => t.pointsRequired > (progress?.points || 0))
   const pointsToNext = nextTier ? nextTier.pointsRequired - (progress?.points || 0) : 0
 
   return (
@@ -56,7 +56,7 @@ export default function BusinessCard({ business, progress }) {
                     className="h-full bg-terracotta rounded-full"
                     initial={{ width: 0 }}
                     animate={{
-                      width: `${((progress.points - (business.tiers[progress.tierIndex]?.pointsRequired || 0)) / (nextTier.pointsRequired - (business.tiers[progress.tierIndex]?.pointsRequired || 0))) * 100}%`
+                      width: `${Math.min(100, ((progress.points - (business.tiers?.[progress.tierIndex]?.pointsRequired || 0)) / (Math.max(1, nextTier.pointsRequired - (business.tiers?.[progress.tierIndex]?.pointsRequired || 0)))) * 100)}%`
                     }}
                     transition={{ duration: 1, delay: 0.3, ease: 'easeOut' }}
                   />
