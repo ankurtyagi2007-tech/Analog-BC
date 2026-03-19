@@ -1,0 +1,10 @@
+{
+  "id": "user-alex",
+  "name": "Alex Chen",
+  "email": "alex@example.com",
+  "avatar": "https://picsum.photos/seed/alex-chen/120/120",
+  "memberSince": "2025-07-15",
+  "enrolledBusinesses": ["kindred-coffee", "contra-cocktails", "terroir-wine"],
+  "totalVisits": 34,
+  "lifetimePoints": 1960
+}

@@ -1,0 +1,402 @@
+{
+  "kindred-coffee": {
+    "membersTotal": 47,
+    "membersOnline": 8,
+    "businessUsersOnline": 2,
+    "messages": [
+      {
+        "id": "kc-pin-1",
+        "author": { "name": "Kindred Coffee", "tier": "Staff", "avatar": "https://picsum.photos/seed/kindred-staff/40/40", "isStaff": true },
+        "content": "Exciting news: our new Ethiopian Yirgacheffe drops this Friday. First 20 guests get a complimentary pour. See you bright and early.",
+        "timestamp": "2026-03-17T09:00:00Z",
+        "pinned": true,
+        "replies": []
+      },
+      {
+        "id": "kc-poll-1",
+        "author": { "name": "Kindred Coffee", "tier": "Staff", "avatar": "https://picsum.photos/seed/kindred-staff/40/40", "isStaff": true },
+        "content": "Help us pick the next guest roaster for April:",
+        "timestamp": "2026-03-16T14:00:00Z",
+        "pinned": false,
+        "isPoll": true,
+        "pollOptions": [
+          { "id": "po-1", "text": "Onyx Coffee Lab", "votes": 14 },
+          { "id": "po-2", "text": "George Howell", "votes": 9 },
+          { "id": "po-3", "text": "Passenger Coffee", "votes": 11 }
+        ],
+        "replies": []
+      },
+      {
+        "id": "kc-1",
+        "author": { "name": "Jordan M.", "tier": "Inner Circle", "avatar": "https://picsum.photos/seed/jordan/40/40" },
+        "content": "The new Burundi single origin is incredible. Getting notes of blackcurrant and dark chocolate. Easily my favorite this season.",
+        "timestamp": "2026-03-17T14:30:00Z",
+        "pinned": false,
+        "replies": [
+          {
+            "id": "kc-1r1",
+            "author": { "name": "Priya S.", "tier": "Family", "avatar": "https://picsum.photos/seed/priya/40/40" },
+            "content": "Agreed! I had it as a pour-over yesterday and it was stunning.",
+            "timestamp": "2026-03-17T14:45:00Z"
+          },
+          {
+            "id": "kc-1r2",
+            "author": { "name": "Sam K.", "tier": "Regular", "avatar": "https://picsum.photos/seed/samk/40/40" },
+            "content": "Going to try it tomorrow morning. Any brew method recommendations?",
+            "timestamp": "2026-03-17T15:10:00Z"
+          }
+        ]
+      },
+      {
+        "id": "kc-2",
+        "author": { "name": "Mika T.", "tier": "Regular", "avatar": "https://picsum.photos/seed/mika/40/40" },
+        "content": "Does anyone know if they still have the cardamom pastries? Went yesterday and they were sold out by 9am.",
+        "timestamp": "2026-03-17T11:20:00Z",
+        "pinned": false,
+        "replies": [
+          {
+            "id": "kc-2r1",
+            "author": { "name": "Kindred Coffee", "tier": "Staff", "avatar": "https://picsum.photos/seed/kindred-staff/40/40", "isStaff": true },
+            "content": "They go fast! We're doubling the batch starting next week. Pro tip: anything before 8:30am and you're golden.",
+            "timestamp": "2026-03-17T11:35:00Z"
+          }
+        ]
+      },
+      {
+        "id": "kc-3",
+        "author": { "name": "Elena R.", "tier": "Family", "avatar": "https://picsum.photos/seed/elena/40/40" },
+        "content": "Just signed up for the cupping session next month. Anyone else going?",
+        "timestamp": "2026-03-16T16:00:00Z",
+        "pinned": false,
+        "replies": []
+      },
+      {
+        "id": "kc-4",
+        "author": { "name": "Chris L.", "tier": "First Pour", "avatar": "https://picsum.photos/seed/chris/40/40" },
+        "content": "First time visiting today. The cortado was perfect and the staff made me feel like I'd been coming for years. Found my new spot.",
+        "timestamp": "2026-03-16T10:15:00Z",
+        "pinned": false,
+        "replies": [
+          {
+            "id": "kc-4r1",
+            "author": { "name": "Jordan M.", "tier": "Inner Circle", "avatar": "https://picsum.photos/seed/jordan/40/40" },
+            "content": "Welcome to the family! Try the flat white next time — it's what got me hooked.",
+            "timestamp": "2026-03-16T10:30:00Z"
+          }
+        ]
+      },
+      {
+        "id": "kc-poll-2",
+        "author": { "name": "Kindred Coffee", "tier": "Staff", "avatar": "https://picsum.photos/seed/kindred-staff/40/40", "isStaff": true },
+        "content": "Weekend vibes — what's your go-to order?",
+        "timestamp": "2026-03-15T08:00:00Z",
+        "pinned": false,
+        "isPoll": true,
+        "pollOptions": [
+          { "id": "po-4", "text": "Pour-over, black", "votes": 18 },
+          { "id": "po-5", "text": "Oat milk latte", "votes": 22 },
+          { "id": "po-6", "text": "Cortado", "votes": 15 },
+          { "id": "po-7", "text": "Cold brew", "votes": 12 }
+        ],
+        "replies": []
+      },
+      {
+        "id": "kc-5",
+        "author": { "name": "Nina W.", "tier": "Regular", "avatar": "https://picsum.photos/seed/nina/40/40" },
+        "content": "The playlist today was immaculate. Kindred always nails the atmosphere.",
+        "timestamp": "2026-03-15T15:45:00Z",
+        "pinned": false,
+        "replies": []
+      },
+      {
+        "id": "kc-6",
+        "author": { "name": "David H.", "tier": "Family", "avatar": "https://picsum.photos/seed/david/40/40" },
+        "content": "Brought my parents here from out of town. They're now asking me to ship them beans monthly. Mission accomplished.",
+        "timestamp": "2026-03-14T13:00:00Z",
+        "pinned": false,
+        "replies": []
+      }
+    ]
+  },
+  "contra-cocktails": {
+    "membersTotal": 63,
+    "membersOnline": 12,
+    "businessUsersOnline": 3,
+    "messages": [
+      {
+        "id": "cc-pin-1",
+        "author": { "name": "Contra Cocktails", "tier": "Staff", "avatar": "https://picsum.photos/seed/contra-staff/40/40", "isStaff": true },
+        "content": "Spring menu launches March 28th. Patrons and above get early access starting March 25th. DM us to reserve your spot.",
+        "timestamp": "2026-03-17T12:00:00Z",
+        "pinned": true,
+        "replies": []
+      },
+      {
+        "id": "cc-1",
+        "author": { "name": "Marcus J.", "tier": "House Guest", "avatar": "https://picsum.photos/seed/marcus/40/40" },
+        "content": "The \"Midnight Garden\" is a masterpiece. Mezcal, charred rosemary, and something floral I can't place. Don't sleep on this one.",
+        "timestamp": "2026-03-17T22:15:00Z",
+        "pinned": false,
+        "replies": [
+          {
+            "id": "cc-1r1",
+            "author": { "name": "Contra Cocktails", "tier": "Staff", "avatar": "https://picsum.photos/seed/contra-staff/40/40", "isStaff": true },
+            "content": "That floral note is elderflower and jasmine. Glad you caught it — it's subtle by design.",
+            "timestamp": "2026-03-17T22:30:00Z"
+          }
+        ]
+      },
+      {
+        "id": "cc-poll-1",
+        "author": { "name": "Contra Cocktails", "tier": "Staff", "avatar": "https://picsum.photos/seed/contra-staff/40/40", "isStaff": true },
+        "content": "We're bringing back one classic from last year's menu. Your vote decides:",
+        "timestamp": "2026-03-16T18:00:00Z",
+        "pinned": false,
+        "isPoll": true,
+        "pollOptions": [
+          { "id": "po-8", "text": "The Last Word Revival", "votes": 24 },
+          { "id": "po-9", "text": "Smoked Negroni", "votes": 31 },
+          { "id": "po-10", "text": "Yuzu Paloma", "votes": 19 }
+        ],
+        "replies": []
+      },
+      {
+        "id": "cc-2",
+        "author": { "name": "Sofia B.", "tier": "Confidant", "avatar": "https://picsum.photos/seed/sofia/40/40" },
+        "content": "Brought a date here last night and they were completely blown away. The low lighting, the service, the attention to detail. This place is magic.",
+        "timestamp": "2026-03-16T23:00:00Z",
+        "pinned": false,
+        "replies": []
+      },
+      {
+        "id": "cc-3",
+        "author": { "name": "Lena P.", "tier": "Patron", "avatar": "https://picsum.photos/seed/lena/40/40" },
+        "content": "Any recommendations for someone who usually drinks wine but wants to explore cocktails? I trust this crowd.",
+        "timestamp": "2026-03-16T19:30:00Z",
+        "pinned": false,
+        "replies": [
+          {
+            "id": "cc-3r1",
+            "author": { "name": "Marcus J.", "tier": "House Guest", "avatar": "https://picsum.photos/seed/marcus/40/40" },
+            "content": "Start with the Aperol-based ones or ask for a \"wine drinker's cocktail\" — the bartenders love that challenge.",
+            "timestamp": "2026-03-16T19:45:00Z"
+          },
+          {
+            "id": "cc-3r2",
+            "author": { "name": "Tom R.", "tier": "Patron", "avatar": "https://picsum.photos/seed/tom/40/40" },
+            "content": "The sherry cobbler is basically a wine cocktail and it's phenomenal here.",
+            "timestamp": "2026-03-16T20:00:00Z"
+          }
+        ]
+      },
+      {
+        "id": "cc-4",
+        "author": { "name": "Amy K.", "tier": "Newcomer", "avatar": "https://picsum.photos/seed/amy/40/40" },
+        "content": "Just discovered this place. The amuse-bouche they gave me on arrival was such a nice touch. Already planning my next visit.",
+        "timestamp": "2026-03-15T21:00:00Z",
+        "pinned": false,
+        "replies": []
+      },
+      {
+        "id": "cc-poll-2",
+        "author": { "name": "Contra Cocktails", "tier": "Staff", "avatar": "https://picsum.photos/seed/contra-staff/40/40", "isStaff": true },
+        "content": "Best night for live jazz at Contra?",
+        "timestamp": "2026-03-14T17:00:00Z",
+        "pinned": false,
+        "isPoll": true,
+        "pollOptions": [
+          { "id": "po-11", "text": "Thursday", "votes": 28 },
+          { "id": "po-12", "text": "Friday", "votes": 15 },
+          { "id": "po-13", "text": "Saturday", "votes": 33 }
+        ],
+        "replies": []
+      }
+    ]
+  },
+  "terroir-wine": {
+    "membersTotal": 38,
+    "membersOnline": 6,
+    "businessUsersOnline": 1,
+    "messages": [
+      {
+        "id": "tw-pin-1",
+        "author": { "name": "Terroir Wine Bar", "tier": "Staff", "avatar": "https://picsum.photos/seed/terroir-staff/40/40", "isStaff": true },
+        "content": "New by-the-glass list just dropped. Featuring three natural producers from the Jura and a stunning Etna Rosso. Come explore.",
+        "timestamp": "2026-03-17T16:00:00Z",
+        "pinned": true,
+        "replies": []
+      },
+      {
+        "id": "tw-1",
+        "author": { "name": "Jordan M.", "tier": "Cellar Keeper", "avatar": "https://picsum.photos/seed/jordan/40/40" },
+        "content": "The Ganevat Chardonnay is transcendent. If you see it on the list, don't hesitate.",
+        "timestamp": "2026-03-17T20:30:00Z",
+        "pinned": false,
+        "replies": [
+          {
+            "id": "tw-1r1",
+            "author": { "name": "Nina W.", "tier": "Sommelier", "avatar": "https://picsum.photos/seed/nina/40/40" },
+            "content": "Had it last week! The texture is unreal. Like drinking liquid sunshine through linen.",
+            "timestamp": "2026-03-17T21:00:00Z"
+          }
+        ]
+      },
+      {
+        "id": "tw-poll-1",
+        "author": { "name": "Terroir Wine Bar", "tier": "Staff", "avatar": "https://picsum.photos/seed/terroir-staff/40/40", "isStaff": true },
+        "content": "Next month's blind tasting theme — you decide:",
+        "timestamp": "2026-03-16T15:00:00Z",
+        "pinned": false,
+        "isPoll": true,
+        "pollOptions": [
+          { "id": "po-14", "text": "Burgundy vs. Oregon Pinot", "votes": 16 },
+          { "id": "po-15", "text": "Old World vs. New World Syrah", "votes": 12 },
+          { "id": "po-16", "text": "Orange Wine Exploration", "votes": 21 }
+        ],
+        "replies": []
+      },
+      {
+        "id": "tw-2",
+        "author": { "name": "Priya S.", "tier": "Enthusiast", "avatar": "https://picsum.photos/seed/priya/40/40" },
+        "content": "Does anyone have recommendations for natural wine shops in the area? Want to keep exploring at home.",
+        "timestamp": "2026-03-16T12:30:00Z",
+        "pinned": false,
+        "replies": [
+          {
+            "id": "tw-2r1",
+            "author": { "name": "David H.", "tier": "Sommelier", "avatar": "https://picsum.photos/seed/david/40/40" },
+            "content": "Discovery Wines on Court Street is excellent. Tell them you're from Terroir, they'll take care of you.",
+            "timestamp": "2026-03-16T13:00:00Z"
+          }
+        ]
+      },
+      {
+        "id": "tw-3",
+        "author": { "name": "Sam K.", "tier": "Taster", "avatar": "https://picsum.photos/seed/samk/40/40" },
+        "content": "Just had my first glass of natural wine here. I think I get it now. The funky ones are growing on me.",
+        "timestamp": "2026-03-15T19:00:00Z",
+        "pinned": false,
+        "replies": []
+      },
+      {
+        "id": "tw-poll-2",
+        "author": { "name": "Terroir Wine Bar", "tier": "Staff", "avatar": "https://picsum.photos/seed/terroir-staff/40/40", "isStaff": true },
+        "content": "Favorite wine region right now?",
+        "timestamp": "2026-03-14T16:00:00Z",
+        "pinned": false,
+        "isPoll": true,
+        "pollOptions": [
+          { "id": "po-17", "text": "Jura, France", "votes": 14 },
+          { "id": "po-18", "text": "Etna, Sicily", "votes": 11 },
+          { "id": "po-19", "text": "Willamette Valley, Oregon", "votes": 8 },
+          { "id": "po-20", "text": "Swartland, South Africa", "votes": 6 }
+        ],
+        "replies": []
+      }
+    ]
+  },
+  "levain-bakery": {
+    "membersTotal": 29,
+    "membersOnline": 4,
+    "businessUsersOnline": 1,
+    "messages": [
+      {
+        "id": "lb-pin-1",
+        "author": { "name": "Levain Bakery", "tier": "Staff", "avatar": "https://picsum.photos/seed/levain-staff/40/40", "isStaff": true },
+        "content": "Rye sourdough is back for the season. Available Wednesday through Sunday while supplies last.",
+        "timestamp": "2026-03-17T07:00:00Z",
+        "pinned": true,
+        "replies": []
+      },
+      {
+        "id": "lb-1",
+        "author": { "name": "Sofia B.", "tier": "Sourdough Society", "avatar": "https://picsum.photos/seed/sofia/40/40" },
+        "content": "Made the focaccia recipe from the workshop at home. It actually turned out! Thank you for the confidence boost.",
+        "timestamp": "2026-03-17T11:00:00Z",
+        "pinned": false,
+        "replies": []
+      },
+      {
+        "id": "lb-poll-1",
+        "author": { "name": "Levain Bakery", "tier": "Staff", "avatar": "https://picsum.photos/seed/levain-staff/40/40", "isStaff": true },
+        "content": "What should we bake for our April special?",
+        "timestamp": "2026-03-15T08:00:00Z",
+        "pinned": false,
+        "isPoll": true,
+        "pollOptions": [
+          { "id": "po-21", "text": "Chocolate babka", "votes": 18 },
+          { "id": "po-22", "text": "Cardamom morning buns", "votes": 24 },
+          { "id": "po-23", "text": "Olive oil cake", "votes": 15 }
+        ],
+        "replies": []
+      },
+      {
+        "id": "lb-2",
+        "author": { "name": "Tom R.", "tier": "Morning Regular", "avatar": "https://picsum.photos/seed/tom/40/40" },
+        "content": "The croissants here have ruined all other croissants for me. That's both a blessing and a curse.",
+        "timestamp": "2026-03-14T09:30:00Z",
+        "pinned": false,
+        "replies": [
+          {
+            "id": "lb-2r1",
+            "author": { "name": "Amy K.", "tier": "First Slice", "avatar": "https://picsum.photos/seed/amy/40/40" },
+            "content": "Same. I've started my morning commute 15 minutes early just to stop here first.",
+            "timestamp": "2026-03-14T10:00:00Z"
+          }
+        ]
+      }
+    ]
+  },
+  "hearth-restaurant": {
+    "membersTotal": 34,
+    "membersOnline": 5,
+    "businessUsersOnline": 2,
+    "messages": [
+      {
+        "id": "hr-pin-1",
+        "author": { "name": "Hearth & Harvest", "tier": "Staff", "avatar": "https://picsum.photos/seed/hearth-staff/40/40", "isStaff": true },
+        "content": "Spring menu launches next Tuesday. Featuring ramps, morels, and the first asparagus from Stone Ridge Farm. Reservations now open.",
+        "timestamp": "2026-03-17T11:00:00Z",
+        "pinned": true,
+        "replies": []
+      },
+      {
+        "id": "hr-1",
+        "author": { "name": "Marcus J.", "tier": "Chef's Table", "avatar": "https://picsum.photos/seed/marcus/40/40" },
+        "content": "The tasting menu last Saturday was one of the best meals I've had in New York. The duck course with fermented plum was extraordinary.",
+        "timestamp": "2026-03-16T14:00:00Z",
+        "pinned": false,
+        "replies": []
+      },
+      {
+        "id": "hr-poll-1",
+        "author": { "name": "Hearth & Harvest", "tier": "Staff", "avatar": "https://picsum.photos/seed/hearth-staff/40/40", "isStaff": true },
+        "content": "Should we bring back Sunday Brunch service?",
+        "timestamp": "2026-03-15T10:00:00Z",
+        "pinned": false,
+        "isPoll": true,
+        "pollOptions": [
+          { "id": "po-24", "text": "Yes, every Sunday!", "votes": 28 },
+          { "id": "po-25", "text": "Monthly special brunch", "votes": 14 },
+          { "id": "po-26", "text": "Keep dinner focus", "votes": 5 }
+        ],
+        "replies": []
+      },
+      {
+        "id": "hr-2",
+        "author": { "name": "Lena P.", "tier": "Regular Table", "avatar": "https://picsum.photos/seed/lena/40/40" },
+        "content": "Took my parents here for their anniversary. Chef came out to say hello. They felt so special. Thank you, Hearth.",
+        "timestamp": "2026-03-14T22:00:00Z",
+        "pinned": false,
+        "replies": [
+          {
+            "id": "hr-2r1",
+            "author": { "name": "Hearth & Harvest", "tier": "Staff", "avatar": "https://picsum.photos/seed/hearth-staff/40/40", "isStaff": true },
+            "content": "That makes our day. Happy anniversary to them! We hope to see the whole family again soon.",
+            "timestamp": "2026-03-15T09:00:00Z"
+          }
+        ]
+      }
+    ]
+  }
+}

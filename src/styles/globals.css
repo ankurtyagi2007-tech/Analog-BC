@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #FAF7F2;
+  --color-cream-dark: #F0EBE1;
+  --color-espresso: #2C1810;
+  --color-espresso-light: #4A3228;
+  --color-terracotta: #C4713B;
+  --color-terracotta-light: #D4945F;
+  --color-sage: #8B9D77;
+  --color-sage-light: #A8B696;
+  --color-warm-gray: #A69B8D;
+  --color-warm-white: #FFFDF9;
+  --color-dark-overlay: rgba(44, 24, 16, 0.6);
+
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'DM Sans', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-cream);
+  color: var(--color-espresso);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  max-width: 390px;
+  margin: 0 auto;
+  min-height: 100dvh;
+  position: relative;
+  overflow-x: hidden;
+  background-color: var(--color-cream);
+  box-shadow: 0 0 40px rgba(44, 24, 16, 0.08);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  scrollbar-width: none;
+}
+
+.img-moody {
+  filter: brightness(0.85) saturate(1.1) sepia(0.1);
+}
+
+.gradient-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(44, 24, 16, 0.85) 0%,
+    rgba(44, 24, 16, 0.4) 40%,
+    transparent 100%
+  );
+}
+
+.gradient-overlay-subtle {
+  background: linear-gradient(
+    to top,
+    rgba(44, 24, 16, 0.6) 0%,
+    rgba(44, 24, 16, 0.2) 30%,
+    transparent 100%
+  );
+}
+
+input::placeholder {
+  color: var(--color-warm-gray);
+}
+
+.snap-y-mandatory {
+  scroll-snap-type: y mandatory;
+}
+
+.snap-start {
+  scroll-snap-align: start;
+}
