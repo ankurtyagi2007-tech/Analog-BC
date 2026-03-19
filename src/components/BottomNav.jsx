@@ -18,7 +18,7 @@ export default function BottomNav() {
       initial={{ y: 0 }}
       animate={{ y: scrollDirection === 'down' ? 100 : 0 }}
       transition={{ duration: 0.3, ease: 'easeInOut' }}
-      className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[390px] z-50"
+      className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[480px] md:max-w-3xl lg:max-w-5xl z-50"
     >
       <div className="bg-espresso/95 backdrop-blur-md px-6 pt-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] flex justify-around items-center">
         {tabs.map(({ to, icon: Icon, label }) => {

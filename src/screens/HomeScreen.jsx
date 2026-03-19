@@ -12,7 +12,7 @@ export default function HomeScreen() {
   return (
     <div className="relative min-h-dvh bg-espresso">
       {/* Top bar */}
-      <div className="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-[390px] z-40 flex items-center justify-between px-5 pt-[max(0.75rem,env(safe-area-inset-top))] pb-2">
+      <div className="fixed top-0 left-1/2 -translate-x-1/2 w-full max-w-[480px] md:max-w-3xl lg:max-w-5xl z-40 flex items-center justify-between px-5 pt-[max(0.75rem,env(safe-area-inset-top))] pb-2">
         <h1 className="font-serif text-xl text-cream font-semibold">Analog</h1>
         <button
           onClick={() => navigate('/profile')}

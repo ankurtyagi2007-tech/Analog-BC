@@ -140,7 +140,7 @@ export default function ExperienceDetailScreen() {
       </div>
 
       {/* Sticky CTA */}
-      <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[390px] z-50 px-5 pb-[max(1rem,env(safe-area-inset-bottom))] pt-3 bg-gradient-to-t from-cream via-cream to-cream/0">
+      <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[480px] md:max-w-3xl lg:max-w-5xl z-50 px-5 pb-[max(1rem,env(safe-area-inset-bottom))] pt-3 bg-gradient-to-t from-cream via-cream to-cream/0">
         <motion.button
           whileTap={{ scale: 0.97 }}
           onClick={handleSignUp}

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { AppProvider, useApp } from './context/AppContext';
 import LoginScreen from './screens/LoginScreen';
@@ -18,9 +18,11 @@ function ProtectedRoute({ children }) {
 }
 
 function AppRoutes() {
+  const location = useLocation();
+
   return (
     <AnimatePresence mode="wait">
-      <Routes>
+      <Routes location={location} key={location.pathname}>
         <Route path="/" element={<LoginScreen />} />
         <Route
           path="/home"

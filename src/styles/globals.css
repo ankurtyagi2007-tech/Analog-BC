@@ -32,13 +32,25 @@ body {
 }
 
 #root {
-  max-width: 390px;
+  max-width: 480px;
   margin: 0 auto;
   min-height: 100dvh;
   position: relative;
   overflow-x: hidden;
   background-color: var(--color-cream);
   box-shadow: 0 0 40px rgba(44, 24, 16, 0.08);
+}
+
+@media (min-width: 768px) {
+  #root {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #root {
+    max-width: 1024px;
+  }
 }
 
 ::-webkit-scrollbar {
