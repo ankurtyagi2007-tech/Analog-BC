@@ -17,38 +17,38 @@ export default function LoginScreen() {
   };
 
   return (
-    <div className="relative min-h-dvh overflow-hidden">
+    <div className="relative min-h-dvh overflow-hidden bg-bg-deep">
       {/* Background */}
       <img
-        src="https://picsum.photos/seed/analog-login/390/844"
+        src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&h=1200&fit=crop&q=80&auto=format"
         alt=""
-        className="absolute inset-0 w-full h-full object-cover img-moody"
+        className="absolute inset-0 w-full h-full object-cover opacity-40"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/60 to-espresso/30" />
+      <div className="absolute inset-0 bg-gradient-to-t from-bg-deep via-bg-deep/80 to-bg-deep/40" />
 
       {/* Content */}
       <motion.div
-        initial={{ opacity: 0, y: 24 }}
+        initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
         className="relative z-10 min-h-dvh flex flex-col justify-end px-6 pb-10 pt-20"
       >
         {/* Branding */}
-        <div className="mb-auto pt-16 text-center">
-          <h1 className="font-serif text-5xl text-cream font-semibold tracking-wide">
+        <div className="mb-auto pt-20 text-center">
+          <h1 className="font-serif text-5xl text-text-primary font-semibold tracking-wide">
             Analog
           </h1>
-          <p className="text-cream/50 text-sm mt-3 tracking-[0.15em] uppercase font-light">
+          <p className="text-text-muted text-sm mt-3 tracking-[0.2em] uppercase font-light">
             Recognition, not rewards
           </p>
         </div>
 
         {/* Form Card */}
-        <div className="bg-espresso/40 backdrop-blur-xl rounded-3xl p-6 border border-cream/8">
-          <h2 className="font-serif text-2xl text-cream mb-1">
+        <div className="glass-card rounded-3xl p-6">
+          <h2 className="font-serif text-2xl text-text-primary mb-1">
             {isSignUp ? 'Create your account' : 'Welcome back'}
           </h2>
-          <p className="text-cream/40 text-sm mb-6">
+          <p className="text-text-muted text-sm mb-6">
             {isSignUp ? 'Your places are waiting' : 'Your places remember you'}
           </p>
 
@@ -59,7 +59,7 @@ export default function LoginScreen() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               aria-label="Email address"
-              className="w-full bg-cream/8 border border-cream/12 rounded-xl px-4 py-3.5 text-cream text-sm focus:outline-none focus:border-terracotta/60 focus:ring-1 focus:ring-terracotta/30 transition-all placeholder:text-cream/30"
+              className="w-full bg-surface border border-border rounded-xl px-4 py-3.5 text-text-primary text-sm focus:outline-none focus:border-gold/50 focus:ring-1 focus:ring-gold/20 transition-all placeholder:text-text-muted"
             />
             <input
               type="password"
@@ -67,13 +67,13 @@ export default function LoginScreen() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               aria-label="Password"
-              className="w-full bg-cream/8 border border-cream/12 rounded-xl px-4 py-3.5 text-cream text-sm focus:outline-none focus:border-terracotta/60 focus:ring-1 focus:ring-terracotta/30 transition-all placeholder:text-cream/30"
+              className="w-full bg-surface border border-border rounded-xl px-4 py-3.5 text-text-primary text-sm focus:outline-none focus:border-gold/50 focus:ring-1 focus:ring-gold/20 transition-all placeholder:text-text-muted"
             />
 
             <motion.button
               type="submit"
               whileTap={{ scale: 0.97 }}
-              className="w-full bg-terracotta hover:bg-terracotta-dark text-cream py-3.5 rounded-xl text-sm font-semibold mt-2 transition-colors cursor-pointer"
+              className="w-full bg-gold hover:bg-gold-light text-bg-deep py-3.5 rounded-xl text-sm font-semibold mt-2 transition-colors cursor-pointer shadow-lg shadow-gold/15"
             >
               {isSignUp ? 'Create Account' : 'Sign In'}
             </motion.button>
@@ -81,9 +81,9 @@ export default function LoginScreen() {
 
           {/* Divider */}
           <div className="flex items-center gap-3 my-5">
-            <div className="flex-1 h-px bg-cream/10" />
-            <span className="text-cream/25 text-xs uppercase tracking-wider">or</span>
-            <div className="flex-1 h-px bg-cream/10" />
+            <div className="flex-1 h-px bg-border" />
+            <span className="text-text-muted text-xs uppercase tracking-wider">or</span>
+            <div className="flex-1 h-px bg-border" />
           </div>
 
           {/* Social auth */}
@@ -91,7 +91,7 @@ export default function LoginScreen() {
             <motion.button
               whileTap={{ scale: 0.97 }}
               onClick={handleSubmit}
-              className="flex-1 flex items-center justify-center gap-2 bg-cream/8 border border-cream/12 rounded-xl py-3.5 text-cream text-sm hover:bg-cream/12 transition-colors cursor-pointer"
+              className="flex-1 flex items-center justify-center gap-2 bg-surface border border-border rounded-xl py-3.5 text-text-primary text-sm hover:bg-surface-hover hover:border-border-hover transition-all cursor-pointer"
             >
               <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current" aria-hidden="true">
                 <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
@@ -101,7 +101,7 @@ export default function LoginScreen() {
             <motion.button
               whileTap={{ scale: 0.97 }}
               onClick={handleSubmit}
-              className="flex-1 flex items-center justify-center gap-2 bg-cream/8 border border-cream/12 rounded-xl py-3.5 text-cream text-sm hover:bg-cream/12 transition-colors cursor-pointer"
+              className="flex-1 flex items-center justify-center gap-2 bg-surface border border-border rounded-xl py-3.5 text-text-primary text-sm hover:bg-surface-hover hover:border-border-hover transition-all cursor-pointer"
             >
               <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current" aria-hidden="true">
                 <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" />
@@ -114,11 +114,11 @@ export default function LoginScreen() {
           </div>
 
           {/* Toggle */}
-          <p className="text-center mt-5 text-cream/40 text-sm">
+          <p className="text-center mt-5 text-text-muted text-sm">
             {isSignUp ? 'Already have an account?' : "Don't have an account?"}{' '}
             <button
               onClick={() => setIsSignUp(!isSignUp)}
-              className="text-terracotta-light hover:text-terracotta transition-colors cursor-pointer"
+              className="text-gold hover:text-gold-light transition-colors cursor-pointer"
             >
               {isSignUp ? 'Sign In' : 'Create Account'}
             </button>

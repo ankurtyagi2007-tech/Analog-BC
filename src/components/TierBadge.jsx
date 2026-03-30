@@ -1,32 +1,30 @@
 const tierColors = {
-  Staff: 'bg-espresso text-cream',
-  'First Pour': 'bg-espresso/8 text-espresso/70',
-  Regular: 'bg-sage/15 text-sage',
-  Family: 'bg-terracotta/15 text-terracotta',
-  'Inner Circle': 'bg-espresso/10 text-espresso',
-  Newcomer: 'bg-espresso/8 text-espresso/70',
-  Patron: 'bg-sage/15 text-sage',
-  Confidant: 'bg-terracotta/15 text-terracotta',
-  'House Guest': 'bg-espresso/10 text-espresso',
-  Taster: 'bg-espresso/8 text-espresso/70',
-  Enthusiast: 'bg-sage/15 text-sage',
-  Sommelier: 'bg-terracotta/15 text-terracotta',
-  'Cellar Keeper': 'bg-espresso/10 text-espresso',
-  'First Slice': 'bg-espresso/8 text-espresso/70',
-  'Morning Regular': 'bg-sage/15 text-sage',
-  'Sourdough Society': 'bg-terracotta/15 text-terracotta',
-  'First Course': 'bg-espresso/8 text-espresso/70',
-  'Regular Table': 'bg-sage/15 text-sage',
-  "Chef's Table": 'bg-terracotta/15 text-terracotta',
-  'Family Meal': 'bg-espresso/10 text-espresso',
+  Staff: 'bg-gold/20 text-gold',
+  'First Pour': 'bg-surface text-text-secondary',
+  Regular: 'bg-sage-dim text-sage',
+  Family: 'bg-gold-dim text-gold',
+  'Inner Circle': 'bg-text-primary/10 text-text-primary',
+  Newcomer: 'bg-surface text-text-secondary',
+  Patron: 'bg-sage-dim text-sage',
+  Confidant: 'bg-gold-dim text-gold',
+  'House Guest': 'bg-text-primary/10 text-text-primary',
+  Taster: 'bg-surface text-text-secondary',
+  Enthusiast: 'bg-sage-dim text-sage',
+  Sommelier: 'bg-gold-dim text-gold',
+  'Cellar Keeper': 'bg-text-primary/10 text-text-primary',
+  'First Slice': 'bg-surface text-text-secondary',
+  'Morning Regular': 'bg-sage-dim text-sage',
+  'Sourdough Society': 'bg-gold-dim text-gold',
+  'First Course': 'bg-surface text-text-secondary',
+  'Regular Table': 'bg-sage-dim text-sage',
+  "Chef's Table": 'bg-gold-dim text-gold',
+  'Family Meal': 'bg-text-primary/10 text-text-primary',
 };
 
 export default function TierBadge({ tier, className = '' }) {
-  const colors = tierColors[tier] || 'bg-espresso/8 text-espresso/70';
+  const colors = tierColors[tier] || 'bg-surface text-text-secondary';
   return (
-    <span
-      className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-semibold tracking-wide ${colors} ${className}`}
-    >
+    <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-[10px] font-semibold tracking-wide ${colors} ${className}`}>
       {tier}
     </span>
   );

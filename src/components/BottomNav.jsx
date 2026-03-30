@@ -21,28 +21,13 @@ export default function BottomNav() {
       className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[430px] z-50"
       aria-label="Main navigation"
     >
-      <div className="bg-espresso/95 backdrop-blur-lg px-6 pt-2.5 pb-[max(0.5rem,env(safe-area-inset-bottom))] flex justify-around items-center border-t border-cream/[0.06]">
+      <div className="bg-bg-deep/95 backdrop-blur-lg px-6 pt-2.5 pb-[max(0.5rem,env(safe-area-inset-bottom))] flex justify-around items-center border-t border-border">
         {tabs.map(({ to, icon: Icon, label }) => {
           const isActive = location.pathname === to;
           return (
-            <NavLink
-              key={to}
-              to={to}
-              className="flex flex-col items-center gap-1 py-1 px-5 min-w-[44px] min-h-[44px] justify-center"
-              aria-current={isActive ? 'page' : undefined}
-            >
-              <Icon
-                size={21}
-                strokeWidth={isActive ? 2 : 1.5}
-                className={`transition-colors duration-200 ${isActive ? 'text-terracotta' : 'text-cream/50'}`}
-              />
-              <span
-                className={`text-[10px] tracking-wide transition-colors duration-200 ${
-                  isActive ? 'text-terracotta font-semibold' : 'text-cream/50'
-                }`}
-              >
-                {label}
-              </span>
+            <NavLink key={to} to={to} className="flex flex-col items-center gap-1 py-1 px-5 min-w-[44px] min-h-[44px] justify-center" aria-current={isActive ? 'page' : undefined}>
+              <Icon size={21} strokeWidth={isActive ? 2 : 1.5} className={`transition-colors duration-200 ${isActive ? 'text-gold' : 'text-text-muted'}`} />
+              <span className={`text-[10px] tracking-wide transition-colors duration-200 ${isActive ? 'text-gold font-semibold' : 'text-text-muted'}`}>{label}</span>
             </NavLink>
           );
         })}

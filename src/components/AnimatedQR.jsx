@@ -10,7 +10,6 @@ function generateQRPattern(seed = 42) {
       const isTopLeft = row < 7 && col < 7;
       const isTopRight = row < 7 && col > 13;
       const isBottomLeft = row > 13 && col < 7;
-
       if (isTopLeft || isTopRight || isBottomLeft) {
         const r = Math.min(row % 7, 6 - (row % 7));
         const c = Math.min(col % 7, 6 - (col % 7));
@@ -37,64 +36,20 @@ export default function AnimatedQR({ itemName, businessName }) {
   return (
     <div className="flex flex-col items-center gap-6">
       <div className="relative">
-        {/* Rotating gradient border */}
-        <motion.div
-          animate={{ rotate: 360 }}
-          transition={{ duration: 4, repeat: Infinity, ease: 'linear' }}
-          className="absolute -inset-3 rounded-2xl"
-          style={{
-            background: 'conic-gradient(from 0deg, #B85C38, #5E8A5E, #1C1410, #B85C38)',
-            opacity: 0.6,
-          }}
-        />
-
-        {/* Pulsing glow */}
-        <motion.div
-          animate={{ scale: [1, 1.04, 1], opacity: [0.4, 0.7, 0.4] }}
-          transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
-          className="absolute -inset-3 rounded-2xl"
-          style={{
-            background: 'conic-gradient(from 180deg, #B85C38, #5E8A5E, #1C1410, #B85C38)',
-            opacity: 0.3,
-            filter: 'blur(10px)',
-          }}
-        />
-
-        {/* QR code container */}
-        <div className="relative bg-warm-white rounded-2xl p-5 z-10 shadow-sm">
+        <motion.div animate={{ rotate: 360 }} transition={{ duration: 4, repeat: Infinity, ease: 'linear' }} className="absolute -inset-3 rounded-2xl" style={{ background: 'conic-gradient(from 0deg, #C9A96E, #6B9B6B, #1A1A24, #C9A96E)', opacity: 0.5 }} />
+        <motion.div animate={{ scale: [1, 1.04, 1], opacity: [0.3, 0.6, 0.3] }} transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }} className="absolute -inset-3 rounded-2xl" style={{ background: 'conic-gradient(from 180deg, #C9A96E, #6B9B6B, #1A1A24, #C9A96E)', filter: 'blur(12px)' }} />
+        <div className="relative bg-bg-card rounded-2xl p-5 z-10 border border-border">
           <svg viewBox="0 0 21 21" className="w-48 h-48" aria-label="QR code for redemption">
-            {grid.map((row, r) =>
-              row.map((cell, c) => (
-                cell ? (
-                  <motion.rect
-                    key={`${r}-${c}`}
-                    x={c}
-                    y={r}
-                    width={1}
-                    height={1}
-                    fill="#1C1410"
-                    initial={{ opacity: 0.8 }}
-                    animate={{ opacity: [0.7, 1, 0.7] }}
-                    transition={{
-                      duration: 2.5,
-                      repeat: Infinity,
-                      delay: (r + c) * 0.02,
-                      ease: 'easeInOut',
-                    }}
-                  />
-                ) : null
-              ))
-            )}
+            {grid.map((row, r) => row.map((cell, c) => cell ? (
+              <motion.rect key={`${r}-${c}`} x={c} y={r} width={1} height={1} fill="#F0ECE5" initial={{ opacity: 0.8 }} animate={{ opacity: [0.7, 1, 0.7] }} transition={{ duration: 2.5, repeat: Infinity, delay: (r + c) * 0.02, ease: 'easeInOut' }} />
+            ) : null))}
           </svg>
         </div>
       </div>
-
       <div className="text-center">
-        <p className="font-serif text-xl text-espresso font-semibold">{itemName}</p>
-        <p className="text-warm-gray text-sm mt-1">{businessName}</p>
-        <p className="text-espresso/40 text-xs mt-3 font-mono tabular-nums">
-          {time.toLocaleTimeString()}
-        </p>
+        <p className="font-serif text-xl text-text-primary font-semibold">{itemName}</p>
+        <p className="text-text-muted text-sm mt-1">{businessName}</p>
+        <p className="text-text-muted text-xs mt-3 font-mono tabular-nums">{time.toLocaleTimeString()}</p>
       </div>
     </div>
   );

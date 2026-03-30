@@ -4,7 +4,7 @@
     "businessId": "kindred-coffee",
     "name": "Kindred Canvas Tote",
     "description": "Heavyweight organic cotton tote with embroidered Kindred logo. Made in collaboration with a local textile studio.",
-    "image": "https://picsum.photos/seed/tote-bag/390/300",
+    "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?w=800&h=600&fit=crop&q=80&auto=format",
     "tierRequired": "regular",
     "pointsCost": 150,
     "available": true
@@ -14,7 +14,7 @@
     "businessId": "kindred-coffee",
     "name": "Ceramic Pour-Over Mug",
     "description": "Handmade ceramic mug by a Brooklyn potter. Each piece is unique with a warm glaze finish.",
-    "image": "https://picsum.photos/seed/ceramic-mug/390/300",
+    "image": "https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=800&h=600&fit=crop&q=80&auto=format",
     "tierRequired": "regular",
     "pointsCost": 200,
     "available": true
@@ -24,7 +24,7 @@
     "businessId": "kindred-coffee",
     "name": "Single Origin Sample Set",
     "description": "Three 4oz bags of our current single-origin selections with tasting notes card.",
-    "image": "https://picsum.photos/seed/coffee-beans/390/300",
+    "image": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=800&h=600&fit=crop&q=80&auto=format",
     "tierRequired": "family",
     "pointsCost": 300,
     "available": true
@@ -34,7 +34,7 @@
     "businessId": "kindred-coffee",
     "name": "Barista Linen Apron",
     "description": "Limited edition linen apron in Kindred's signature clay color. Only 50 made.",
-    "image": "https://picsum.photos/seed/linen-apron/390/300",
+    "image": "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&h=600&fit=crop&q=80&auto=format",
     "tierRequired": "inner-circle",
     "pointsCost": 500,
     "available": true
@@ -44,7 +44,7 @@
     "businessId": "contra-cocktails",
     "name": "Contra Coupe Glass Set",
     "description": "Set of two hand-blown coupe glasses etched with the Contra monogram.",
-    "image": "https://picsum.photos/seed/coupe-glass/390/300",
+    "image": "https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=800&h=600&fit=crop&q=80&auto=format",
     "tierRequired": "patron",
     "pointsCost": 250,
     "available": true
@@ -54,7 +54,7 @@
     "businessId": "contra-cocktails",
     "name": "House Bitters Collection",
     "description": "Three small-batch bitters made in-house: citrus, aromatic, and smoked cherry.",
-    "image": "https://picsum.photos/seed/bitters-set/390/300",
+    "image": "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=800&h=600&fit=crop&q=80&auto=format",
     "tierRequired": "patron",
     "pointsCost": 180,
     "available": true
@@ -64,7 +64,7 @@
     "businessId": "contra-cocktails",
     "name": "Contra Embroidered Cap",
     "description": "Washed cotton cap in midnight navy with tonal Contra embroidery.",
-    "image": "https://picsum.photos/seed/cap-hat/390/300",
+    "image": "https://images.unsplash.com/photo-1588850561407-ed78c334e67a?w=800&h=600&fit=crop&q=80&auto=format",
     "tierRequired": "confidant",
     "pointsCost": 350,
     "available": true
@@ -74,7 +74,7 @@
     "businessId": "terroir-wine",
     "name": "Sommelier Corkscrew",
     "description": "Professional-grade waiter's corkscrew with olivewood handle. Engraved with Terroir mark.",
-    "image": "https://picsum.photos/seed/corkscrew/390/300",
+    "image": "https://images.unsplash.com/photo-1474722883778-792e7990302f?w=800&h=600&fit=crop&q=80&auto=format",
     "tierRequired": "enthusiast",
     "pointsCost": 200,
     "available": true
@@ -84,7 +84,7 @@
     "businessId": "terroir-wine",
     "name": "Hand-Blown Carafe",
     "description": "Artisan glass carafe perfect for natural wines. Made by a Murano-trained glassblower.",
-    "image": "https://picsum.photos/seed/glass-carafe/390/300",
+    "image": "https://images.unsplash.com/photo-1567529684892-09290a1b2d05?w=800&h=600&fit=crop&q=80&auto=format",
     "tierRequired": "sommelier",
     "pointsCost": 400,
     "available": true
@@ -94,7 +94,7 @@
     "businessId": "terroir-wine",
     "name": "Terroir Vintage Tee",
     "description": "Garment-dyed cotton tee with a wine region map print on the back.",
-    "image": "https://picsum.photos/seed/vintage-tee/390/300",
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&h=600&fit=crop&q=80&auto=format",
     "tierRequired": "sommelier",
     "pointsCost": 280,
     "available": true
@@ -104,7 +104,7 @@
     "businessId": "levain-bakery",
     "name": "Bread Linen Wrap",
     "description": "French linen bread wrap to keep your loaves fresh. Screen-printed with Levain's wheat motif.",
-    "image": "https://picsum.photos/seed/bread-linen/390/300",
+    "image": "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=800&h=600&fit=crop&q=80&auto=format",
     "tierRequired": "morning-regular",
     "pointsCost": 120,
     "available": true
@@ -114,7 +114,7 @@
     "businessId": "levain-bakery",
     "name": "Sourdough Starter Kit",
     "description": "Take home a piece of our 12-year-old sourdough starter with a care guide and recipe card.",
-    "image": "https://picsum.photos/seed/sourdough-kit/390/300",
+    "image": "https://images.unsplash.com/photo-1585478259715-876acc5be8eb?w=800&h=600&fit=crop&q=80&auto=format",
     "tierRequired": "sourdough-society",
     "pointsCost": 250,
     "available": true
@@ -124,7 +124,7 @@
     "businessId": "hearth-restaurant",
     "name": "Olive Wood Cutting Board",
     "description": "Hand-carved olive wood board sourced from our partner farm in the Hudson Valley.",
-    "image": "https://picsum.photos/seed/cutting-board/390/300",
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=800&h=600&fit=crop&q=80&auto=format",
     "tierRequired": "regular-table",
     "pointsCost": 300,
     "available": true
@@ -134,7 +134,7 @@
     "businessId": "hearth-restaurant",
     "name": "House Hot Sauce Trio",
     "description": "Three seasonal hot sauces made from our garden peppers. Limited annual batch.",
-    "image": "https://picsum.photos/seed/hot-sauce/390/300",
+    "image": "https://images.unsplash.com/photo-1506976785307-8732e854ad03?w=800&h=600&fit=crop&q=80&auto=format",
     "tierRequired": "regular-table",
     "pointsCost": 180,
     "available": true
