@@ -17,26 +17,28 @@ export default function BottomNav() {
     <motion.nav
       initial={{ y: 0 }}
       animate={{ y: scrollDirection === 'down' ? 100 : 0 }}
-      transition={{ duration: 0.3, ease: 'easeInOut' }}
-      className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[480px] md:max-w-3xl lg:max-w-5xl z-50"
+      transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
+      className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[430px] z-50"
+      aria-label="Main navigation"
     >
-      <div className="bg-espresso/95 backdrop-blur-md px-6 pt-2 pb-[max(0.5rem,env(safe-area-inset-bottom))] flex justify-around items-center">
+      <div className="bg-espresso/95 backdrop-blur-lg px-6 pt-2.5 pb-[max(0.5rem,env(safe-area-inset-bottom))] flex justify-around items-center border-t border-cream/[0.06]">
         {tabs.map(({ to, icon: Icon, label }) => {
           const isActive = location.pathname === to;
           return (
             <NavLink
               key={to}
               to={to}
-              className="flex flex-col items-center gap-0.5 py-1 px-4"
+              className="flex flex-col items-center gap-1 py-1 px-5 min-w-[44px] min-h-[44px] justify-center"
+              aria-current={isActive ? 'page' : undefined}
             >
               <Icon
-                size={22}
+                size={21}
                 strokeWidth={isActive ? 2 : 1.5}
-                className={isActive ? 'text-terracotta' : 'text-cream/60'}
+                className={`transition-colors duration-200 ${isActive ? 'text-terracotta' : 'text-cream/50'}`}
               />
               <span
-                className={`text-[10px] tracking-wide ${
-                  isActive ? 'text-terracotta font-medium' : 'text-cream/60'
+                className={`text-[10px] tracking-wide transition-colors duration-200 ${
+                  isActive ? 'text-terracotta font-semibold' : 'text-cream/50'
                 }`}
               >
                 {label}

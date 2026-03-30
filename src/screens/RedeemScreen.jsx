@@ -27,7 +27,8 @@ export default function RedeemScreen() {
       <div className="flex justify-end pt-[max(1rem,env(safe-area-inset-top))] px-5">
         <button
           onClick={() => navigate(-1)}
-          className="w-9 h-9 rounded-full bg-espresso/5 flex items-center justify-center"
+          className="w-10 h-10 rounded-full bg-espresso/[0.05] flex items-center justify-center hover:bg-espresso/[0.08] transition-colors cursor-pointer"
+          aria-label="Close"
         >
           <X size={18} className="text-espresso" />
         </button>
@@ -36,16 +37,16 @@ export default function RedeemScreen() {
       {/* Content */}
       <div className="flex-1 flex flex-col items-center justify-center px-8">
         <motion.p
-          initial={{ opacity: 0, y: -10 }}
+          initial={{ opacity: 0, y: -8 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
-          className="text-sm text-espresso/60 mb-8 text-center"
+          transition={{ delay: 0.3, duration: 0.35 }}
+          className="text-sm text-warm-gray mb-8 text-center font-medium"
         >
           Show this to your barista
         </motion.p>
 
         <motion.div
-          initial={{ scale: 0.8, opacity: 0 }}
+          initial={{ scale: 0.85, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.2, type: 'spring', damping: 20 }}
         >
@@ -58,7 +59,7 @@ export default function RedeemScreen() {
         <motion.button
           whileTap={{ scale: 0.97 }}
           onClick={() => navigate(`/business/${item.businessId}`)}
-          className="w-full py-3.5 rounded-xl border border-espresso/15 text-espresso text-sm font-medium"
+          className="w-full py-4 rounded-2xl border border-espresso/12 text-espresso text-sm font-semibold hover:bg-espresso/[0.02] transition-colors cursor-pointer"
         >
           Done
         </motion.button>

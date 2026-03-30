@@ -1,4 +1,5 @@
 import { Pencil } from 'lucide-react';
+import { motion } from 'framer-motion';
 import { useApp } from '../context/AppContext';
 import BottomNav from '../components/BottomNav';
 import FilterChips from '../components/FilterChips';
@@ -24,11 +25,10 @@ export default function CommunityScreen() {
   return (
     <div className="min-h-dvh bg-cream pb-24">
       {/* Header */}
-      <div className="pt-[max(1rem,env(safe-area-inset-top))] px-5 pb-2">
-        <h1 className="font-serif text-2xl text-espresso">Community</h1>
+      <div className="pt-[max(1.25rem,env(safe-area-inset-top))] px-5 pb-2">
+        <h1 className="font-serif text-2xl text-espresso font-semibold">Community</h1>
       </div>
 
-      {/* Filter */}
       <FilterChips
         businesses={enrolledBusinesses}
         activeFilter={activeFilter}
@@ -42,13 +42,13 @@ export default function CommunityScreen() {
 
       {/* Stats */}
       <div className="px-5 pb-3">
-        <div className="flex items-center gap-4 text-xs text-espresso/50">
-          <span>{community.membersTotal} members</span>
-          <span className="flex items-center gap-1">
-            <span className="w-1.5 h-1.5 rounded-full bg-sage" />
+        <div className="flex items-center gap-4 text-xs text-warm-gray">
+          <span className="font-medium">{community.membersTotal} members</span>
+          <span className="flex items-center gap-1.5">
+            <span className="w-1.5 h-1.5 rounded-full bg-sage animate-pulse" />
             {community.membersOnline} online
           </span>
-          <span className="flex items-center gap-1">
+          <span className="flex items-center gap-1.5">
             <span className="w-1.5 h-1.5 rounded-full bg-terracotta" />
             {community.businessUsersOnline} staff
           </span>
@@ -58,13 +58,13 @@ export default function CommunityScreen() {
       {/* Pinned */}
       {pinnedMessages.length > 0 && (
         <div className="mb-2">
-          <p className="px-5 text-[10px] uppercase tracking-[0.15em] text-espresso/40 mb-1">
+          <p className="px-5 text-[10px] uppercase tracking-[0.15em] text-warm-gray mb-1.5 font-semibold">
             Pinned
           </p>
           {pinnedMessages.map((msg) => (
             <MessageBubble key={msg.id} message={msg} />
           ))}
-          <div className="mx-5 h-px bg-espresso/5 mt-2" />
+          <div className="mx-5 h-px bg-espresso/[0.04] mt-2" />
         </div>
       )}
 
@@ -80,9 +80,13 @@ export default function CommunityScreen() {
       </div>
 
       {/* Compose FAB */}
-      <button className="fixed bottom-20 right-[calc(50%-195px+20px)] w-12 h-12 rounded-full bg-terracotta shadow-lg flex items-center justify-center z-40">
+      <motion.button
+        whileTap={{ scale: 0.9 }}
+        className="fixed bottom-22 right-5 w-14 h-14 rounded-full bg-terracotta shadow-lg shadow-terracotta/25 flex items-center justify-center z-40 cursor-pointer hover:bg-terracotta-dark transition-colors"
+        aria-label="Compose message"
+      >
         <Pencil size={18} className="text-cream" />
-      </button>
+      </motion.button>
 
       <BottomNav />
     </div>

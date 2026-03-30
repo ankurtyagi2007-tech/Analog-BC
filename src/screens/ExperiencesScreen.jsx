@@ -22,11 +22,10 @@ export default function ExperiencesScreen() {
   return (
     <div className="min-h-dvh bg-cream pb-24">
       {/* Header */}
-      <div className="pt-[max(1rem,env(safe-area-inset-top))] px-5 pb-2">
-        <h1 className="font-serif text-2xl text-espresso">Experiences</h1>
+      <div className="pt-[max(1.25rem,env(safe-area-inset-top))] px-5 pb-2">
+        <h1 className="font-serif text-2xl text-espresso font-semibold">Experiences</h1>
       </div>
 
-      {/* Filter */}
       <FilterChips
         businesses={state.businesses}
         activeFilter={state.activeBusinessFilter}
@@ -34,7 +33,7 @@ export default function ExperiencesScreen() {
       />
 
       {/* Experiences grid */}
-      <div className="px-5 flex flex-col gap-4 mt-2">
+      <div className="px-5 flex flex-col gap-4 mt-3">
         {filtered.map((exp, index) => {
           const isEnrolled = state.user.enrolledBusinesses.includes(exp.businessId);
           const spotsLeft = exp.spotsTotal - exp.spotsTaken;
@@ -42,14 +41,13 @@ export default function ExperiencesScreen() {
           return (
             <motion.div
               key={exp.id}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.05 }}
-              className="relative rounded-2xl overflow-hidden cursor-pointer"
+              transition={{ delay: index * 0.04, duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+              className="relative rounded-2xl overflow-hidden cursor-pointer shadow-sm"
               onClick={() => isEnrolled && navigate(`/experience/${exp.id}`)}
             >
-              {/* Image */}
-              <div className="relative h-[200px]">
+              <div className="relative h-[210px]">
                 <img
                   src={exp.image}
                   alt={exp.title}
@@ -57,18 +55,17 @@ export default function ExperiencesScreen() {
                 />
                 <div className="gradient-overlay-subtle absolute inset-0" />
 
-                {/* Overlay content */}
                 <div className="absolute bottom-0 left-0 right-0 p-4 z-10">
-                  <p className="text-cream/60 text-xs mb-1">{getBizName(exp.businessId)}</p>
-                  <h3 className="font-serif text-xl text-cream font-medium">{exp.title}</h3>
-                  <div className="flex items-center gap-2 mt-2 text-cream/70 text-xs">
+                  <p className="text-cream/50 text-[11px] mb-1 font-medium">{getBizName(exp.businessId)}</p>
+                  <h3 className="font-serif text-xl text-cream font-medium leading-tight">{exp.title}</h3>
+                  <div className="flex items-center gap-2 mt-2 text-cream/60 text-xs">
                     <span>
                       {new Date(exp.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
                     </span>
-                    <span className="text-cream/30">·</span>
+                    <span className="text-cream/25">·</span>
                     <span>{exp.time}</span>
-                    <span className="text-cream/30">·</span>
-                    <span className={spotsLeft <= 3 ? 'text-terracotta-light' : ''}>
+                    <span className="text-cream/25">·</span>
+                    <span className={spotsLeft <= 3 ? 'text-terracotta-light font-semibold' : ''}>
                       {spotsLeft} spots left
                     </span>
                   </div>
@@ -77,7 +74,6 @@ export default function ExperiencesScreen() {
                   </div>
                 </div>
 
-                {/* Lock overlay */}
                 {!isEnrolled && (
                   <LockOverlay businessName={getBizName(exp.businessId)} />
                 )}

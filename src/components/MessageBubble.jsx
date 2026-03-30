@@ -22,30 +22,30 @@ export default function MessageBubble({ message }) {
   const isPinned = message.pinned;
 
   return (
-    <div className={`px-5 py-2 ${isPinned ? 'border-l-2 border-sage bg-sage/5' : ''}`}>
+    <div className={`px-5 py-2.5 ${isPinned ? 'border-l-2 border-sage bg-sage/[0.04]' : ''}`}>
       <div className="flex gap-3">
         <img
           src={message.author.avatar}
-          alt={message.author.name}
-          className="w-8 h-8 rounded-full object-cover shrink-0 mt-0.5"
+          alt=""
+          className="w-9 h-9 rounded-full object-cover shrink-0 mt-0.5"
         />
         <div className="flex-1 min-w-0">
           <div className="flex items-center gap-2 flex-wrap">
-            <span className="text-sm font-medium text-espresso">
+            <span className="text-sm font-semibold text-espresso">
               {message.author.name}
             </span>
             <TierBadge tier={message.author.tier} />
-            <span className="text-[10px] text-espresso/40 ml-auto">
+            <span className="text-[10px] text-warm-gray ml-auto">
               {formatTime(message.timestamp)}
             </span>
           </div>
-          <p className="text-sm text-espresso/80 mt-1 leading-relaxed">
+          <p className="text-sm text-espresso/75 mt-1.5 leading-relaxed">
             {message.content}
           </p>
           {hasReplies && (
             <button
               onClick={() => dispatch({ type: 'TOGGLE_THREAD', payload: message.id })}
-              className="flex items-center gap-1.5 mt-2 text-terracotta/80 text-xs"
+              className="flex items-center gap-1.5 mt-2.5 text-terracotta/80 hover:text-terracotta text-xs font-medium transition-colors cursor-pointer"
             >
               <MessageCircle size={13} />
               <span>
@@ -59,25 +59,25 @@ export default function MessageBubble({ message }) {
                 initial={{ height: 0, opacity: 0 }}
                 animate={{ height: 'auto', opacity: 1 }}
                 exit={{ height: 0, opacity: 0 }}
-                transition={{ duration: 0.25, ease: 'easeInOut' }}
+                transition={{ duration: 0.25, ease: [0.22, 1, 0.36, 1] }}
                 className="overflow-hidden"
               >
-                <div className="mt-2 ml-2 border-l border-espresso/10 pl-3 flex flex-col gap-3">
+                <div className="mt-3 ml-2 border-l-2 border-espresso/[0.06] pl-3 flex flex-col gap-3">
                   {message.replies.map((reply) => (
-                    <div key={reply.id} className="flex gap-2">
+                    <div key={reply.id} className="flex gap-2.5">
                       <img
                         src={reply.author.avatar}
-                        alt={reply.author.name}
-                        className="w-6 h-6 rounded-full object-cover shrink-0 mt-0.5"
+                        alt=""
+                        className="w-7 h-7 rounded-full object-cover shrink-0 mt-0.5"
                       />
                       <div>
                         <div className="flex items-center gap-1.5">
-                          <span className="text-xs font-medium text-espresso">
+                          <span className="text-xs font-semibold text-espresso">
                             {reply.author.name}
                           </span>
                           <TierBadge tier={reply.author.tier} />
                         </div>
-                        <p className="text-xs text-espresso/70 mt-0.5 leading-relaxed">
+                        <p className="text-xs text-espresso/65 mt-0.5 leading-relaxed">
                           {reply.content}
                         </p>
                       </div>

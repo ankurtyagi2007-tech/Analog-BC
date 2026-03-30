@@ -39,7 +39,8 @@ export default function MerchDetailScreen() {
 
         <button
           onClick={() => navigate(-1)}
-          className="absolute top-[max(1rem,env(safe-area-inset-top))] left-4 z-20 w-9 h-9 rounded-full bg-espresso/30 backdrop-blur-md flex items-center justify-center"
+          className="absolute top-[max(1rem,env(safe-area-inset-top))] left-4 z-20 w-10 h-10 rounded-full bg-espresso/30 backdrop-blur-md flex items-center justify-center hover:bg-espresso/40 transition-colors cursor-pointer"
+          aria-label="Go back"
         >
           <ArrowLeft size={18} className="text-cream" />
         </button>
@@ -47,11 +48,16 @@ export default function MerchDetailScreen() {
 
       {/* Content */}
       <div className="px-5 -mt-4 relative z-10 pb-28">
-        <div className="bg-warm-white rounded-2xl p-5 shadow-sm border border-espresso/5">
+        <motion.div
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+          className="bg-warm-white rounded-2xl p-5 shadow-sm border border-espresso/[0.06]"
+        >
           <div className="flex items-start justify-between mb-3">
             <div>
-              <h1 className="font-serif text-2xl text-espresso">{item.name}</h1>
-              <p className="text-sm text-espresso/50 mt-0.5">{biz?.name}</p>
+              <h1 className="font-serif text-2xl text-espresso font-semibold">{item.name}</h1>
+              <p className="text-sm text-warm-gray mt-0.5">{biz?.name}</p>
             </div>
             <TierBadge tier={tierName} />
           </div>
@@ -60,22 +66,22 @@ export default function MerchDetailScreen() {
             {item.description}
           </p>
 
-          <div className="flex items-center gap-2 pt-3 border-t border-espresso/5">
-            <span className="font-serif text-2xl text-terracotta">{item.pointsCost}</span>
-            <span className="text-sm text-espresso/50">points</span>
+          <div className="flex items-baseline gap-2 pt-4 border-t border-espresso/[0.06]">
+            <span className="font-serif text-2xl text-terracotta font-semibold">{item.pointsCost}</span>
+            <span className="text-sm text-warm-gray">points</span>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/* Sticky CTA */}
-      <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[480px] md:max-w-3xl lg:max-w-5xl z-50 px-5 pb-[max(1rem,env(safe-area-inset-bottom))] pt-3 bg-gradient-to-t from-cream via-cream to-cream/0">
+      <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[430px] z-50 px-5 pb-[max(1rem,env(safe-area-inset-bottom))] pt-3 bg-gradient-to-t from-cream via-cream to-cream/0">
         <motion.button
           whileTap={{ scale: 0.97 }}
           onClick={isRedeemed ? () => navigate(`/redeem/${id}`) : handleRedeem}
-          className={`w-full py-3.5 rounded-xl text-sm font-medium transition-colors ${
+          className={`w-full py-4 rounded-2xl text-sm font-semibold transition-all cursor-pointer ${
             isRedeemed
               ? 'bg-sage text-cream'
-              : 'bg-terracotta text-cream active:bg-terracotta-light'
+              : 'bg-terracotta text-cream hover:bg-terracotta-dark active:bg-terracotta-dark shadow-lg shadow-terracotta/20'
           }`}
         >
           {isRedeemed ? 'View QR Code' : 'Redeem'}

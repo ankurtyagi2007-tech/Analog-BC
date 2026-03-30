@@ -24,31 +24,31 @@ export default function LoginScreen() {
         alt=""
         className="absolute inset-0 w-full h-full object-cover img-moody"
       />
-      <div className="absolute inset-0 bg-espresso/50" />
+      <div className="absolute inset-0 bg-gradient-to-t from-espresso via-espresso/60 to-espresso/30" />
 
       {/* Content */}
       <motion.div
-        initial={{ opacity: 0, y: 30 }}
+        initial={{ opacity: 0, y: 24 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: 'easeOut' }}
-        className="relative z-10 min-h-dvh flex flex-col justify-end px-6 pb-12 pt-20"
+        transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+        className="relative z-10 min-h-dvh flex flex-col justify-end px-6 pb-10 pt-20"
       >
         {/* Branding */}
         <div className="mb-auto pt-16 text-center">
           <h1 className="font-serif text-5xl text-cream font-semibold tracking-wide">
             Analog
           </h1>
-          <p className="text-cream/60 text-sm mt-2 tracking-wide">
+          <p className="text-cream/50 text-sm mt-3 tracking-[0.15em] uppercase font-light">
             Recognition, not rewards
           </p>
         </div>
 
         {/* Form Card */}
-        <div className="bg-espresso/30 backdrop-blur-xl rounded-3xl p-6 border border-cream/10">
+        <div className="bg-espresso/40 backdrop-blur-xl rounded-3xl p-6 border border-cream/8">
           <h2 className="font-serif text-2xl text-cream mb-1">
             {isSignUp ? 'Create your account' : 'Welcome back'}
           </h2>
-          <p className="text-cream/50 text-sm mb-6">
+          <p className="text-cream/40 text-sm mb-6">
             {isSignUp ? 'Your places are waiting' : 'Your places remember you'}
           </p>
 
@@ -58,20 +58,22 @@ export default function LoginScreen() {
               placeholder="Email address"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full bg-cream/10 border border-cream/15 rounded-xl px-4 py-3 text-cream text-sm focus:outline-none focus:border-terracotta/50 transition-colors"
+              aria-label="Email address"
+              className="w-full bg-cream/8 border border-cream/12 rounded-xl px-4 py-3.5 text-cream text-sm focus:outline-none focus:border-terracotta/60 focus:ring-1 focus:ring-terracotta/30 transition-all placeholder:text-cream/30"
             />
             <input
               type="password"
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full bg-cream/10 border border-cream/15 rounded-xl px-4 py-3 text-cream text-sm focus:outline-none focus:border-terracotta/50 transition-colors"
+              aria-label="Password"
+              className="w-full bg-cream/8 border border-cream/12 rounded-xl px-4 py-3.5 text-cream text-sm focus:outline-none focus:border-terracotta/60 focus:ring-1 focus:ring-terracotta/30 transition-all placeholder:text-cream/30"
             />
 
             <motion.button
               type="submit"
               whileTap={{ scale: 0.97 }}
-              className="w-full bg-terracotta text-cream py-3.5 rounded-xl text-sm font-medium mt-2 active:bg-terracotta-light transition-colors"
+              className="w-full bg-terracotta hover:bg-terracotta-dark text-cream py-3.5 rounded-xl text-sm font-semibold mt-2 transition-colors cursor-pointer"
             >
               {isSignUp ? 'Create Account' : 'Sign In'}
             </motion.button>
@@ -79,9 +81,9 @@ export default function LoginScreen() {
 
           {/* Divider */}
           <div className="flex items-center gap-3 my-5">
-            <div className="flex-1 h-px bg-cream/15" />
-            <span className="text-cream/30 text-xs">or</span>
-            <div className="flex-1 h-px bg-cream/15" />
+            <div className="flex-1 h-px bg-cream/10" />
+            <span className="text-cream/25 text-xs uppercase tracking-wider">or</span>
+            <div className="flex-1 h-px bg-cream/10" />
           </div>
 
           {/* Social auth */}
@@ -89,9 +91,9 @@ export default function LoginScreen() {
             <motion.button
               whileTap={{ scale: 0.97 }}
               onClick={handleSubmit}
-              className="flex-1 flex items-center justify-center gap-2 bg-cream/10 border border-cream/15 rounded-xl py-3 text-cream text-sm"
+              className="flex-1 flex items-center justify-center gap-2 bg-cream/8 border border-cream/12 rounded-xl py-3.5 text-cream text-sm hover:bg-cream/12 transition-colors cursor-pointer"
             >
-              <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
+              <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current" aria-hidden="true">
                 <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z" />
               </svg>
               Apple
@@ -99,9 +101,9 @@ export default function LoginScreen() {
             <motion.button
               whileTap={{ scale: 0.97 }}
               onClick={handleSubmit}
-              className="flex-1 flex items-center justify-center gap-2 bg-cream/10 border border-cream/15 rounded-xl py-3 text-cream text-sm"
+              className="flex-1 flex items-center justify-center gap-2 bg-cream/8 border border-cream/12 rounded-xl py-3.5 text-cream text-sm hover:bg-cream/12 transition-colors cursor-pointer"
             >
-              <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
+              <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current" aria-hidden="true">
                 <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" />
                 <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
                 <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
@@ -112,11 +114,11 @@ export default function LoginScreen() {
           </div>
 
           {/* Toggle */}
-          <p className="text-center mt-5 text-cream/50 text-sm">
+          <p className="text-center mt-5 text-cream/40 text-sm">
             {isSignUp ? 'Already have an account?' : "Don't have an account?"}{' '}
             <button
               onClick={() => setIsSignUp(!isSignUp)}
-              className="text-terracotta-light"
+              className="text-terracotta-light hover:text-terracotta transition-colors cursor-pointer"
             >
               {isSignUp ? 'Sign In' : 'Create Account'}
             </button>
